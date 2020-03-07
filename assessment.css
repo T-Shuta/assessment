@@ -1,16 +1,42 @@
-body{
-    background-color: #04A6EB;
-    color:#FDFFFF;
-    width: 500px;
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (min-width: 600px){/*パソコン用*/
+    body{
+        background-color: #04A6EB;
+        color:#FDFFFF;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    button{
+        padding: 5px 20px;
+        background-color: #337AB7;
+        border-style: none;
+        color: #FDFFFF;
+    }
+    input{
+        height: 20px;
+    }
+    .block{
+        display: inline;
+    }
 }
-button{
-    padding: 5px 20px;
-    background-color: #337AB7;
-    border-style: none;
-    color: #FDFFFF;
-}
-input{
-    height: 20px;
+
+@media screen and (max-width: 600px) {/*スマホ用*/
+    body{
+        background-color: #04A6EB;
+        color:#FDFFFF;
+        width: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    button{
+        display: block;
+        padding: 5px 20px;
+        background-color: #337AB7;
+        border-style: none;
+        color: #FDFFFF;
+    }
+    input{
+        display: block;
+        height: 20px;
+    }
 }
